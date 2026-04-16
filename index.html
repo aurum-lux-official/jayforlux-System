@@ -81,17 +81,11 @@
     <div id="system-detail-modal" class="fixed inset-0 bg-[#0A0F1C]/95 backdrop-blur-md z-[9999] hidden items-center justify-center opacity-0 transition-opacity duration-300 px-4">
         <div id="system-detail-content" class="w-[95vw] md:w-full max-w-4xl glass py-8 md:py-12 border-t-2 border-t-[#C5A059] rounded-sm transform scale-95 transition-transform duration-300 relative max-h-[90vh] flex flex-col mx-auto overflow-hidden">
             <button onclick="closeSystemDetail()" class="absolute top-4 right-4 md:top-6 md:right-6 text-gray-500 hover:text-white transition text-3xl leading-none z-50">&times;</button>
-            
             <h3 class="text-[10px] text-[#C5A059] tracking-[0.4em] uppercase mb-4 serif text-center shrink-0">System Detail</h3>
-            
             <button onclick="slideModal(-1)" class="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/60 border border-white/10 items-center justify-center rounded-full text-white hover:bg-[#C5A059] hover:text-black transition">&larr;</button>
             <button onclick="slideModal(1)" class="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-black/60 border border-white/10 items-center justify-center rounded-full text-white hover:bg-[#C5A059] hover:text-black transition">&rarr;</button>
-
-            <div id="modal-slider-track" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar w-full flex-grow relative scroll-smooth">
-            </div>
-
-            <div id="modal-slider-dots" class="flex justify-center gap-3 mt-4 shrink-0">
-            </div>
+            <div id="modal-slider-track" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar w-full flex-grow relative scroll-smooth"></div>
+            <div id="modal-slider-dots" class="flex justify-center gap-3 mt-4 shrink-0"></div>
         </div>
     </div>
 
@@ -105,7 +99,6 @@
     <div id="canvas-container"></div>
 
     <div id="view-lp" class="view-section min-h-screen pb-20 transition-opacity duration-500">
-        
         <nav id="main-nav" class="fixed w-full z-50 px-6 py-4 flex justify-between items-center transition-all duration-300">
             <div class="lg:hidden flex-1">
                 <button id="mobile-menu-btn" class="text-[#C5A059] focus:outline-none p-2 -ml-2 relative z-50">
@@ -114,7 +107,6 @@
                 </button>
             </div>
             <div class="text-xl font-semibold tracking-[0.3em] text-[#C5A059] serif cursor-pointer lg:flex-none text-center" onclick="scrollToSec('home', event)">AURUM</div>
-            
             <div class="hidden lg:flex gap-6 text-[9px] tracking-widest text-gray-400 serif uppercase absolute left-1/2 -translate-x-1/2 items-center">
                 <a href="#home" onclick="scrollToSec('home', event)" class="hover:text-[#C5A059] transition">HOME</a>
                 <a href="#how-it-works" onclick="scrollToSec('how-it-works', event)" class="hover:text-[#C5A059] transition">FLOW</a>
@@ -179,7 +171,6 @@
             <div class="max-w-4xl mx-auto text-center glass p-8 md:p-12 rounded-sm border border-[#C5A059]/30 shadow-lg shadow-black/50">
                 <h3 class="text-[10px] text-[#C5A059] tracking-[0.4em] uppercase mb-6 serif reveal-init">HOW IT WORKS</h3>
                 <h2 class="text-xl md:text-2xl serif text-white mb-16 tracking-widest reveal-init">ご利用の流れ</h2>
-
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-sm text-gray-400 tracking-widest">
                     <div class="reveal-init">
                         <div class="text-[#C5A059] text-xs mb-3 font-bold uppercase">STEP 01</div>
@@ -207,7 +198,6 @@
         <section id="system" class="w-full py-32 border-t border-white/5 relative z-10">
             <div class="max-w-7xl mx-auto">
                 <h2 class="text-center text-xl md:text-2xl serif text-white tracking-widest mb-12 reveal-init uppercase">SELECT YOUR SYSTEM</h2>
-                
                 <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-4 md:justify-center pb-10 pt-4 no-scrollbar reveal-init scroll-smooth w-full">
                     
                     <div class="system-card snap-center shrink-0 w-[85vw] max-w-[320px] min-w-[280px] md:min-w-[320px] glass p-8 md:p-10 relative rounded-sm">
@@ -317,7 +307,7 @@
                         <a href="https://my.dooprime.com/ja/links/go/70858" target="_blank" class="block w-full bg-[#C5A059] text-black px-6 py-4 text-[11px] tracking-[0.2em] font-bold btn-cta text-center rounded-sm">新規口座を開設する</a>
                     </div>
                     <div class="border border-white/10 p-8 rounded-sm bg-black/20 flex flex-col justify-between">
-                        <div><h4 class="text-[#C5A059] text-sm tracking-widest mb-4 font-bold border-b border-white/10 pb-3">既に口座をお持ちの方</h4><p class="text-xs text-gray-400 leading-loose mb-8">システムの紐付け上、必ず当リンクから<span class="text-white font-bold border-b border-white/30">別メールアドレスにて再度新規登録</span>をお願いします。</p></div>
+                        <div><h4 class="text-[#C5A059] text-sm tracking-widest mb-4 font-bold border-b border-white/10 pb-3">既に口座をお持ちの方</h4><p class="text-xs text-gray-400 leading-loose mb-8">システムの紐付け上、必ず当リンクから<span class="text-white font-bold border-b border-white/30">別メールアドレスと別電話番号にて再度新規登録</span>をお願いします。※電話番号認証は無いため既存の電話番号の一部を変えて登録する形でも可能です</p></div>
                         <div><a href="https://my.dooprime.com/ja/links/go/70858" target="_blank" class="block w-full border border-[#C5A059] text-[#C5A059] px-6 py-4 text-[11px] tracking-[0.2em] font-bold btn-cta text-center hover:bg-[#C5A059]/10 transition rounded-sm">別アドレスで開設する</a></div>
                     </div>
                 </div>
@@ -422,7 +412,7 @@
         document.addEventListener("DOMContentLoaded", () => {
             setTimeout(forceReveal, 4000);
 
-            // --- UI切り替えロジック ---
+            // --- UI切り替え ---
             window.switchView = (target) => {
                 const sections = document.querySelectorAll('.view-section');
                 if (sections.length > 0) {
@@ -477,7 +467,7 @@
                 }
             };
 
-            // --- GAS連携ロジック ---
+            // --- GAS連携ロジック（最適化・新URL反映済み） ---
             window.handleApplication = async (e) => {
                 if(e && typeof e.preventDefault === 'function') e.preventDefault();
                 
@@ -491,19 +481,27 @@
                 if(btn) { btn.innerText = "SENDING..."; btn.disabled = true; }
                 
                 const formData = new FormData(e.target);
+                const params = new URLSearchParams();
+                for (const pair of formData.entries()) {
+                    params.append(pair[0], pair[1]);
+                }
                 
-                // ★★★ 組み込み完了済みGAS URL ★★★
-                const GAS_URL = "https://script.google.com/macros/s/AKfycbzwF_1g5E8XO5kWteI6r2gafWAGoDTF4dXNwJD6W7Oay1bsJnm9eD4lLWycGBRrqwQf/exec"; 
+                // ★ 新しくいただいた画像から取得したGAS URL ★
+                const GAS_URL = "https://script.google.com/macros/s/AKfycbw27QVd8RKGSd74GBMLP0A_JvmpNT5lqETygFow9r2Y_e-AEdsNs33AuETRYgUNjHE/exec"; 
 
                 try {
                     await fetch(GAS_URL, {
                         method: 'POST',
                         mode: 'no-cors',
-                        body: formData
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: params
                     });
                     window.switchView('view-success');
                 } catch(err) { 
                     console.error("GAS送信エラー:", err);
+                    alert("送信エラーが発生しました。ネットワーク接続をご確認ください。");
                 } finally { 
                     if(btn) { btn.innerText = "SUBMIT"; btn.disabled = false; } 
                 }
@@ -560,7 +558,7 @@
                 }, { passive: true });
             }
 
-            // --- システム詳細データ (Order Flow と Trend Scalp を入れ替え済み) ---
+            // --- システム詳細データ ---
             const systemDetailData = {
                 'order_flow': {
                     title: 'Order Flow',
@@ -737,7 +735,7 @@
                 });
             }
 
-            // --- 背景演出 & プログレスバー ---
+            // --- エフェクト系 ---
             const progressBar = document.getElementById('scroll-progress-bar');
             const codeContainer = document.getElementById('code-bg-container');
             const codeStrings = ['function execute()', 'if(vol > threshold)', '=>', 'import { OrderFlow }', 'const trend = true;', 'return ROI;', 'yield', 'async', 'await', '<AURUM>', '[]', 'Volume.analyze()', 'SMC.detectPOI()', 'Grid.calculate()'];
@@ -772,24 +770,18 @@
             const updateScrollEffects = () => {
                 const docHeight = document.documentElement.scrollHeight - window.innerHeight;
                 const scrollPercent = docHeight > 0 ? (currentScroll / docHeight) : 0;
-                
-                if (progressBar) {
-                    progressBar.style.width = `${scrollPercent * 100}%`;
-                }
+                if (progressBar) progressBar.style.width = `${scrollPercent * 100}%`;
 
                 const loopH = winH + 100; 
                 snippets.forEach(snippet => {
                     if(!snippet || !snippet.el) return;
                     let offset = snippet.baseY - (currentScroll * snippet.speed);
                     let currentY = ((offset % loopH) + loopH) % loopH - 50; 
-                    
                     let opacityDist = Math.abs(currentY - (winH / 2)) / (winH / 2); 
                     let opacity = Math.max(0, 0.3 - (opacityDist * 0.3)); 
-
                     snippet.el.style.transform = `translate3d(0, ${currentY - snippet.baseY}px, ${snippet.z}px)`;
                     snippet.el.style.opacity = opacity.toFixed(2);
                 });
-                
                 isTicking = false;
             };
 
@@ -808,10 +800,9 @@
 
             updateScrollEffects();
 
-            // --- プレローダー & GSAP ---
+            // --- GSAP ---
             const preloader = document.getElementById('preloader');
             const preText = document.getElementById('preloader-text');
-            
             if (typeof gsap !== 'undefined') {
                 if(preloader && preText) {
                     const tl = gsap.timeline();
@@ -820,13 +811,10 @@
                       .to(preText, { opacity: 0, duration: 1, ease: "power2.inOut" })
                       .to(preloader, { opacity: 0, duration: 1, ease: "power2.inOut", onComplete: () => {
                           preloader.style.display = 'none';
-                          
                           const heroReveals = document.querySelectorAll(".hero-reveal");
                           if(heroReveals.length > 0) gsap.to(heroReveals, { y: "0%", opacity: 1, duration: 1.2, stagger: 0.15, ease: "power4.out" });
-                          
                           const revealInits = document.querySelectorAll(".reveal-init");
                           if(revealInits.length > 0) gsap.to(revealInits, { opacity: 1, y: 0, duration: 1, stagger: 0.15, ease: "power3.out", delay: 0.5 });
-                          
                           if(typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
                       }}, "-=0.5");
                 }
@@ -840,11 +828,9 @@
                 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
                 renderer.setSize(window.innerWidth, window.innerHeight);
                 canvasContainer.appendChild(renderer.domElement);
-                
                 const geometry = new THREE.IcosahedronGeometry(12, 1);
                 const material = new THREE.MeshBasicMaterial({ color: 0xC5A059, wireframe: true, transparent: true, opacity: 0.15 });
                 const mesh = new THREE.Mesh(geometry, material);
-                
                 mesh.position.set(5, 0, -10);
                 scene.add(mesh); 
                 camera.position.z = 5;
@@ -878,7 +864,7 @@
                 }, { passive: true });
             }
 
-            // --- Chart & Counters ---
+            // --- Charts & Counters ---
             let perfChart = null;
             const canvasEl = document.getElementById("perfChart");
             function initChart() {
